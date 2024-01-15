@@ -31,6 +31,9 @@ Todas las herramientas de phishing para termux en un solo script
 
 
 # Uso
-
+```bash
+   cd pTools
+   python Ptools.py
+```
 Los repositorios clonados se guardan en la carpeta principal, para clonar un repositorio solo escribe el numero que tiene asignado cada uno 
 
