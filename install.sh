@@ -50,6 +50,7 @@ android(){
     done
     if [ $i -eq 15 ];then 
         rm install.sh
+	rm pTools/install.sh
         cd pTools
         python Ptools.py
     fi 
