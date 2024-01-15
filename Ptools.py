@@ -14,8 +14,8 @@ f"""
     {roj} created By 
   telegram: @pes528 {fin}
 
-Herramientas de termux para Phishing
-Actualizados y mas usados segun github
+Herramientas de phishing para Termux
+
 """)
     #search_tool = input("Escribe rep0: ")
     tools = ToolPhi()
