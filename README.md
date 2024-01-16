@@ -27,7 +27,7 @@ Todas las herramientas de phishing para termux en un solo script
     
 ## Authors
 
-- [@eu](https://t.me/@pes528)
+- [@eu](https://t.me/pes528)
 
 
 # Uso
