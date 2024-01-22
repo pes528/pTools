@@ -22,6 +22,8 @@ class ToolPhi:
     async def add_data(self, num_page=None):
 
         async def req(url):
+
+            time.sleep(2)
             return requests.get(url).json()
         time.sleep(2)
         #body = requests.get(self.__DATA["url"]+num_page).json() if num_page != None else requests.get(self.__DATA["url"]).json()
