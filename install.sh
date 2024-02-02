@@ -17,6 +17,7 @@ android(){
     rm -rf Ptools
     pip install requests 
     pip install pytest
+    pip install aiohttp
 
     git clone https://github.com/pes528/pTools
     clear 
