@@ -20,10 +20,11 @@ Herramientas de phishing para Termux
     #search_tool = input("Escribe rep0: ")
     tools = ToolPhi()
     await tools.add_data()
-    tools.get_data()
+    #tools.get_data()
     page = 2
     while True:
-        
+        tools.get_data()
+        if tools.get_data() == None:print("Ups llegaste al final");break
         print(rojito+"\nPara clonar un repositorio escribe el numero que tiene asignado cada uno\nPreciona 0 para salir, Enter para continuar viendo."+fin)
         op = input(": ")
         try:
@@ -50,7 +51,7 @@ Herramientas de phishing para Termux
             tools.get_data()
             
             page += 1
-            if tools.get_data() == []:
+            if tools.get_data() == None:
                 print("UPS!! llegaste al final")
                 break
             
@@ -60,6 +61,9 @@ Herramientas de phishing para Termux
     
     #print(tools.sites)
 if __name__ == "__main__":
-    asyncio.run(main())
+    import subprocess
+    
+    run = lambda : asyncio.run(main()) if subprocess.run(["ping", "-c", "1", "www.google.com"], capture_output=True) != "ping: unknown host www.google.com" else print("NO TIENES ACCESO A INTERNET")
+    run()
 
 
