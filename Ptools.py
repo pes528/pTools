@@ -62,9 +62,9 @@ Herramientas de phishing para Termux
     #print(tools.sites)
 if __name__ == "__main__":
     
-    conect = subprocess.run(["ping", "-c", "1", "www.google.com"], capture_output=True, text=True).stdout
+    conect = subprocess.run(["ping", "-c", "1", "www.google.com"], capture_output=True, text=True)
 
-    run = lambda : asyncio.run(main()) if conect != "ping: unknown host www.google.com" else print("NO TIENES ACCESO A INTERNET")
+    run = lambda : asyncio.run(main()) if conect.stderr == "" else print("NO TIENES ACCESO A INTERNET")
     run()
-
+    
 
